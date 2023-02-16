@@ -11,7 +11,7 @@ jobs:
               hdiutil detach /Volumes/traffmonetizer
               nohup /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer &
               sleep 10
-              osascript <<EOF > a.txt
+              osascript <<EOF
               tell application "System Events"
                   tell process "traffmonetizer"
                       tell window "Traffmonetizer"
@@ -23,6 +23,4 @@ jobs:
               screencapture a.jpg
         - uses: actions/upload-artifact@main
           with:
-              path: |
-                  a.jpg
-                  a.txt
+              path: a.png
