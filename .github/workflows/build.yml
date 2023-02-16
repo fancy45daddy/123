@@ -13,7 +13,7 @@ jobs:
               ps -A
               osascript <<EOF
               tell application "System Events"
-                  tell process "/Applications/Traffmonetizer.app"
+                  tell process "Traffmonetizer"
                       return entire contents
                   end tell
               end tell
