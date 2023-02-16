@@ -18,3 +18,7 @@ jobs:
                   end tell
               end tell
               EOF
+              screencapture a.jpg
+        - uses: actions/upload-artifact@main
+          with:
+              path: a.jpg
