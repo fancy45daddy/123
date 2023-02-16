@@ -15,7 +15,7 @@ jobs:
               tell application "System Events"
                   tell process "traffmonetizer"
                       tell window "Traffmonetizer"
-                          return get value of button 2
+                          return get value of button 1
                       end tell
                   end tell
               end tell
