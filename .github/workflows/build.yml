@@ -11,6 +11,7 @@ jobs:
               hdiutil detach /Volumes/traffmonetizer
               /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer &
               ps -A
+              sleep 10
               osascript <<EOF
               tell application "System Events"
                   tell process "Traffmonetizer"
