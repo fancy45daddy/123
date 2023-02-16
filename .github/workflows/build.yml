@@ -15,7 +15,7 @@ jobs:
               tell application "System Events"
                   tell process "traffmonetizer"
                       tell window "Traffmonetizer"
-                          set value of button 1 to "1234"
+                          set value of button 1 of group 1 to "1234"
                       end tell
                   end tell
               end tell
