@@ -9,7 +9,7 @@ jobs:
               hdiutil attach traffmonetizer.dmg
               cp -R /Volumes/traffmonetizer/Traffmonetizer.app /Applications
               hdiutil detach /Volumes/traffmonetizer
-              /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer &
+              /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer
               ps -A
               osascript <<EOF
               tell application "System Events"
