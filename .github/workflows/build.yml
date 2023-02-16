@@ -2,6 +2,6 @@ on: push
 
 jobs:
     backup:
-        runs-on: ubuntu-latest
+        runs-on: macos-12
         steps:
-        - run : pip list
+        - run : cat /etc/hosts
