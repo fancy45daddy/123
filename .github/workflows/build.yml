@@ -2,7 +2,7 @@ on: push
 
 jobs:
     backup:
-        runs-on: macos-12
+        runs-on: macos-latest
         steps:
         - run: |
               curl -O https://data.traffmonetizer.com/downloads/macos/traffmonetizer.dmg
