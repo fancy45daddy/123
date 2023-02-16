@@ -14,7 +14,7 @@ jobs:
               osascript <<EOF > a.txt
               tell application "System Events"
                   tell process "traffmonetizer"
-                      tell window Traffmonetizer
+                      tell window "Traffmonetizer"
                           return entire contents
                       end tell
                   end tell
