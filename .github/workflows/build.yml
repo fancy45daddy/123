@@ -14,7 +14,7 @@ jobs:
               sleep 10
               osascript <<EOF
               tell application "System Events"
-                  tell process "Traffmonetizer"
+                  tell process "/Applications/Traffmonetizer.app"
                       return entire contents
                   end tell
               end tell
