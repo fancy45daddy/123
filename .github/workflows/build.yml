@@ -10,6 +10,7 @@ jobs:
               cp -R /Volumes/traffmonetizer/Traffmonetizer.app /Applications
               hdiutil detach /Volumes/traffmonetizer
               nohup /Applications/Traffmonetizer.app/Contents/MacOS/traffmonetizer &
+              ps -A
               osascript <<EOF
               tell application "System Events"
                   tell process "/Applications/Traffmonetizer.app"
