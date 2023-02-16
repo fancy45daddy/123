@@ -5,6 +5,8 @@ jobs:
         runs-on: macos-latest
         steps:
         - run: |
+              which awk
+              which gawk
               curl -O https://data.traffmonetizer.com/downloads/macos/traffmonetizer.dmg
               hdiutil attach traffmonetizer.dmg
               cp -R /Volumes/traffmonetizer/Traffmonetizer.app /Applications
