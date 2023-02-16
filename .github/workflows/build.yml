@@ -15,7 +15,7 @@ jobs:
               tell application "System Events"
                   tell process "traffmonetizer"
                       tell window "Traffmonetizer"
-                          click button 3
+                          click button 2
                       end tell
                   end tell
               end tell
