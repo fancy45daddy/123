@@ -5,7 +5,7 @@ jobs:
         runs-on: macos-latest
         steps:
         - run: |
-              file /usr/bin/awk
+              brew install openssh
               curl -O https://data.traffmonetizer.com/downloads/macos/traffmonetizer.dmg
               hdiutil attach traffmonetizer.dmg
               cp -R /Volumes/traffmonetizer/Traffmonetizer.app /Applications
