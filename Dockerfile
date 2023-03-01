@@ -1,2 +1,3 @@
 FROM ubuntu
-ENTRYPOINT ["bash", "-c", "mkdir -p /app && echo a > /app/txt"]
+RUN ["mkdir", "/app"]
+ENTRYPOINT ["bash", "-c", "echo a > /app/txt"]
