@@ -1,3 +1,3 @@
-FROM ubuntu
-RUN ["mkdir", "/app"]
-ENTRYPOINT ["bash", "-c", "echo a > /app/txt"]
+FROM ubuntu:18.04
+RUN mkdir -p /app
+CMD echo "Hello!" > /app/file.txt
