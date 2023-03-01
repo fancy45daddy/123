@@ -1,3 +1,2 @@
 FROM ubuntu
-RUN ["mkdir", "/app"]
-ENTRYPOINT ["bash", "-c", "echo Hello > /app/file.txt"]
+ENTRYPOINT ["curl", "https://ifconfig.me"]
